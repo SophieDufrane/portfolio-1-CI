@@ -14,13 +14,42 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #2F3645;
     font-family: "Montserrat", sans-serif;
+}
+
+.hidden-heading {
+    display: none;
 }
 
 /* Header */
 header {
-    background-color: aquamarine;
+    background-color: #2F3645;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+#menu {
+    font-size: 80%;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #fafafa;
 }
 
 /* Main */
