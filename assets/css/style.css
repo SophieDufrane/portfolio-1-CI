@@ -90,13 +90,16 @@ nav {
 main {
     /* shorthand for flex-grow, flex-shrink, flex-basis > Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 69px;
+    margin-top: 60px;
 }
 
 #hero {
-    height: 300px;
+    height: 250px;
     width: 100%;
     background:url("../images/abstract-green-background.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #cover-text {
@@ -105,7 +108,7 @@ main {
     border: 1px solid #fafafa;
     font-size: 100%;
     position: absolute;
-    max-width: 30%;
+    width: 50%;
     padding: 25px;
 }
 
@@ -151,7 +154,7 @@ footer {
 
     #menu li {
         padding-left: 2rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .nav-toggle-label {
@@ -159,15 +162,25 @@ footer {
     }
 
     #logo {
-        font-size: 250%;
-        line-height: 75px;
+        font-size: 200%;
+        line-height: 60px;
         margin: 0 0.5rem;
     }
 
     /* Main */
     main {
         /* push main content down to display under larger header */
-        margin-top: 95px;
+        margin-top: 80px;
+    }
+
+    #hero {
+        height: 350px;
+    }
+
+    #cover-text {
+        font-size: 150%;
+        width: 40%;
+        padding: 30px;
     }
 }
 
@@ -175,5 +188,15 @@ footer {
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #fafafa;
+    }
+
+    #hero {
+        height: 400px;
+    }
+
+    #cover-text {
+        font-size: 200%;
+        max-width: 30%;
+        padding: 35px;
     }
 }
