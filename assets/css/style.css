@@ -99,6 +99,11 @@ footer {
     background-color: lightgoldenrodyellow;
 }
 
+#social-networks li {
+    color: #fafafa;
+    font-size: 1rem;
+}
+
 /* Media query: tablets and larger screens (768px and up) */
 @media screen and (min-width: 768px) {
 
