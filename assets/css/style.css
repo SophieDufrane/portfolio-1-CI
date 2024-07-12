@@ -43,6 +43,7 @@ header a {
 h1 {
     letter-spacing: 2px;
     text-transform: uppercase;
+    padding: 10px 0;
 }
 
 #menu {
@@ -91,6 +92,7 @@ main {
     background-color: lightcoral;
     /* shorthand for flex-grow, flex-shrink, flex-basis > Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 60px;
 }
 
 /* Footer */
