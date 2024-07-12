@@ -30,6 +30,9 @@ header {
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -65,8 +68,22 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    /* the top of the element (nav) should start at the bottom of its parent (header). 0% = top of the parent, 100% = bottom of it */
+    top: 100%;
 }
 
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
 
 
 /* Main */
