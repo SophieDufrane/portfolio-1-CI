@@ -28,7 +28,6 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
     color: #fafafa;
     display: flex;
     justify-content: space-between;
@@ -67,7 +66,6 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     /* the top of the element (nav) should start at the bottom of its parent (header). 0% = top of the parent, 100% = bottom of it */
     top: 100%;
@@ -98,4 +96,28 @@ main {
 /* Footer */
 footer {
     background-color: lightgoldenrodyellow;
+}
+
+/* Media query: tablets and larger screenns (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+    /* for items to show in a row */    
+        display: flex;
+    }
+
+    #menu li {
+        padding-left: 2rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 }
