@@ -1,5 +1,5 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -17,13 +17,21 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+
+h1, h2, h3 {
+    font-family: "Abel", sans-serif;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
 .hidden-heading {
     display: none;
 }
 
 /* Header */
 header {
-    background-color: #2F3645;
+    background-color: #163421;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -39,15 +47,8 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: "Anton SC", sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 10px 0;
-}
-
 #menu {
-    font-size: 80%;
+    font-size: 70%;
     letter-spacing: 4px;
     list-style-type: none;
 }
@@ -63,7 +64,7 @@ h1 {
 /* Navbar style with dropdeown toggle */
 nav {
     position: absolute;
-    background-color: #2F3645;
+    background-color: #163421;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -82,9 +83,8 @@ nav {
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
-
 
 /* Main */
 main {
@@ -94,14 +94,29 @@ main {
 }
 
 #hero {
-    height: 600px;
+    height: 300px;
     width: 100%;
-    background:url("../images/computer-illustration.jpg") no-repeat center center/cover;
+    background:url("../images/abstract-green-background.jpg") no-repeat center center/cover;
+}
+
+#cover-text {
+    /* Final rgba value sets the opacity so it is semi-transparent */
+    background-color: rgba(214, 239, 216, 0.2);
+    border: 1px solid #fafafa;
+    font-size: 100%;
+    position: absolute;
+    max-width: 30%;
+    padding: 25px;
+}
+
+#cover-text>h2, #cover-text>h3, #cover-text>p {
+    color: #fafafa;
+    text-align: center;
 }
 
 /* Footer */
 footer {
-    background-color: #2F3645;
+    background-color:#163421;
 }
 
 #social-networks {
