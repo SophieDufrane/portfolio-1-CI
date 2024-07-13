@@ -17,13 +17,21 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-h1,
+h1 {
+    font-family: "Abel", sans-serif;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    color: #fafafa;
+}
+
 h2,
 h3 {
     font-family: "Abel", sans-serif;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     padding: 10px 0;
+    color: #252525;
 }
 
 .hidden-heading {
@@ -32,12 +40,11 @@ h3 {
 
 /* Header */
 header {
-    background-color: #163421;
+    background-color: #898989;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    color: #fafafa;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -56,16 +63,18 @@ header a {
 
 #menu>li {
     margin-bottom: 1em;
+    color: #fafafa;
 }
 
 .active {
     border-bottom: 1px solid #fafafa;
+    padding:2px;
 }
 
 /* Navbar style with dropdeown toggle */
 nav {
     position: absolute;
-    background-color: #163421;
+    background-color: #898989;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -85,6 +94,7 @@ nav {
 
 .nav-toggle-label {
     font-size: 1.5rem;
+    color: #fafafa;
 }
 
 /* Main */
@@ -95,9 +105,9 @@ main {
 }
 
 #hero {
-    height: 250px;
+    height: 300px;
     width: 100%;
-    background: url("../images/abstract-green-background.jpg") no-repeat center center/cover;
+    background: url("../images/code-black-white.jpeg") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,10 +115,9 @@ main {
 
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: rgba(214, 239, 216, 0.2);
-    border: 1px solid #fafafa;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid #fafafa;
     font-size: 100%;
-    position: absolute;
     width: 50%;
     padding: 25px;
 }
@@ -128,17 +137,17 @@ main {
 
 #presentation h2 {
     margin-bottom: 20px;
-    color: #163421;
     font-size: 200%;
 }
 
 #about-me-pitch hr {
-    border-top: 1px solid #163421;
+    border-top: 1px solid #252525;
     margin: 5px 0 15px 0;
 }
 
 #circle-cover-bg {
-    background: url('../images/picture-me.jpg') no-repeat top center / cover;
+    background: url('../images/picture-me-black-white.jpeg') no-repeat top center / cover;
+    transform: scaleX(-1);
     height: 90vw;
     width: 90vw;
     margin: 20px 0;
@@ -153,28 +162,59 @@ main {
     justify-content: center;
     align-items: center;
 }
+   /* Test square image */
+#about-me-img-test {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+#square-cover-img {
+    background: url('../images/picture-me-black-white.jpeg') no-repeat top center / cover;
+    transform: scaleX(-1);
+    height: 90vw;
+    width: 90vw;
+    max-width: 250px;
+    max-height: 250px;
+    position: absolute;
+    z-index: 2;
+}
+
+#square-plain {
+    background-color: #898989;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 15px; /* Adjust this value for vertical shift */
+    right: 15px; /* Adjust this value for horizontal shift */
+    z-index: 1;
+}
+   /* Test square image */
+
 
 /* Button */
 #about-me-button {
-    background-color: #163421;
+    background-color:  #898989;
     color: #fafafa;
     padding: 10px 15px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
     margin-top: 20px;
+    border: none;
     border-radius: 4px;
 }
 
 #about-me-button:hover {
-    background-color: rgba(85, 104, 86, 0.5);
-    border: 1px solid #163421;
-    color: #163421;
+    background-color: #fafafa;
+    border: 1px solid #252525;
+    color: #252525;
 }
 
 /* Footer */
 footer {
-    background-color: #163421;
+    background-color:#898989;
 }
 
 #social-networks {
@@ -209,7 +249,7 @@ footer {
 
     #menu li {
         padding-left: 2rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .nav-toggle-label {
@@ -217,24 +257,17 @@ footer {
     }
 
     #logo {
-        font-size: 200%;
         line-height: 60px;
         margin: 0 0.5rem;
     }
 
-    /* Main */
-    main {
-        /* push main content down to display under larger header */
-        margin-top: 80px;
-    }
-
     #hero {
-        height: 350px;
+        height: 400px;
     }
 
     #cover-text {
-        font-size: 150%;
-        width: 40%;
+        font-size: 120%;
+        width: 45%;
         padding: 30px;
     }
 
@@ -246,7 +279,7 @@ footer {
     }
 
     #presentation {
-        max-width: 70%;
+        max-width: 80%;
     }
 
     #about-me-pitch {
@@ -260,11 +293,11 @@ footer {
     }
 
     /* Button */
-#about-me-button {
-    padding: 15px 25px;
-    font-size: 16px;
-    margin-top: 40px;
-}
+    #about-me-button {
+        padding: 15px 25px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
 }
 
 /* Media query: laptops and larger screens (992px and up) */
@@ -274,12 +307,6 @@ footer {
     }
 
     #hero {
-        height: 400px;
-    }
-
-    #cover-text {
-        font-size: 200%;
-        max-width: 30%;
-        padding: 35px;
+        height: 450px;
     }
 }
