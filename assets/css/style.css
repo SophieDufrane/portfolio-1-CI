@@ -68,7 +68,7 @@ header a {
 
 .active {
     border-bottom: 1px solid #fafafa;
-    padding:2px;
+    padding: 2px;
 }
 
 /* Navbar style with dropdeown toggle */
@@ -162,40 +162,10 @@ main {
     justify-content: center;
     align-items: center;
 }
-   /* Test square image */
-#about-me-img-test {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-}
-
-#square-cover-img {
-    background: url('../images/picture-me-black-white.jpeg') no-repeat top center / cover;
-    transform: scaleX(-1);
-    height: 90vw;
-    width: 90vw;
-    max-width: 250px;
-    max-height: 250px;
-    position: absolute;
-    z-index: 2;
-}
-
-#square-plain {
-    background-color: #898989;
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    bottom: 15px; /* Adjust this value for vertical shift */
-    right: 15px; /* Adjust this value for horizontal shift */
-    z-index: 1;
-}
-   /* Test square image */
-
 
 /* Button */
 #about-me-button {
-    background-color:  #898989;
+    background-color: #898989;
     color: #fafafa;
     padding: 10px 15px;
     text-align: center;
@@ -212,9 +182,51 @@ main {
     color: #252525;
 }
 
+/* Skills section */
+#skills {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#skills h2 {
+    margin-bottom: 20px;
+    font-size: 200%;
+}
+
+#skills-set div {
+    background: url("../images/code-black-white.jpeg") no-repeat center center/cover;
+    color: #fafafa;
+}
+
+.skills-detail {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-detail h3 {
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+
+.skills-detail-list li {
+    list-style-type: none;
+    padding: 0 0 3px 20px;
+    font-size: 1rem;
+}
+
+.skills-detail-icone i {
+    padding-right: 30px;
+    font-size: 3rem;
+}
+
+
 /* Footer */
 footer {
-    background-color:#898989;
+    background-color: #898989;
 }
 
 #social-networks {
@@ -298,6 +310,8 @@ footer {
         font-size: 16px;
         margin-top: 40px;
     }
+    /* Skills section */
+   
 }
 
 /* Media query: laptops and larger screens (992px and up) */
