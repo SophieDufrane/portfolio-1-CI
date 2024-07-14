@@ -241,27 +241,29 @@ main {
 #contact {
     background: url("../images/contact-email-black-white.jpeg");
     background-size: cover;
-    padding: 20px 10% 0 10%;
+    padding: 20% 10% 0 10%;
     flex-grow: 1;
 }
 
 #contact-form {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid #fafafa;
-    color: #fafafa;
+    color: #505e7c;
+    font-weight: 500;
     padding: 30px;
     max-width: 400px;
 }
 
 #contact-form>h2 {
     margin-bottom: 20px;
+    font-weight:600;
     color: #e97456;
 }
 
 .text-input,
 .text-area {
     background: transparent;
-    color: #fafafa;
+    color: #505e7c;
     width: 100%;
     margin: 5px 0 20px 0;
     border: 1px solid #fafafa;
