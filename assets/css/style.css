@@ -204,6 +204,7 @@ main {
 #skills-detail-orange {
     color: #fafafa;
     padding: 10px;
+    display: flex;
 }
 
 #skills-detail-blue {
