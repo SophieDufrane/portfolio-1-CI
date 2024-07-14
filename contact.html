@@ -11,9 +11,9 @@
     <!-- Title -->
     <title>This is my Website</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/web-favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/web-favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/web-favicon.png">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -36,7 +36,28 @@
     </header>
 
     <!-- Main -->
-    <main>Contact page</main>
+    <main>
+        <section id="contact">
+            <form id="contact-form" action="" method="post">
+                <h2>Send me an email</h2>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="text-input" required>
+                <br>
+                <label for="email-address">Email</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <br>
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" class="text-input" required>
+                <br>
+                <label for="message">Message</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="33" class="text-area"></textarea>
+                <br>
+                <button type="submit" class="submit-button">Send email</button>
+            </form>
+        </section>
+
+    </main>
 
     <!-- Footer -->
     <footer>

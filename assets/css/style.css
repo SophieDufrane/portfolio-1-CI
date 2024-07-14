@@ -34,7 +34,7 @@ h3 {
     color: #252525;
 }
 
-#fluo-text {
+.fluo-text {
     color: #e97456;
 }
 
@@ -71,8 +71,8 @@ header a {
 }
 
 .active {
-    border-bottom: 1px solid #fafafa;
-    padding: 2px;
+    border-bottom: 1.5px solid #e97456;
+    padding: 2.5px;
 }
 
 /* Navbar style with dropdeown toggle */
@@ -106,6 +106,8 @@ main {
     /* shorthand for flex-grow, flex-shrink, flex-basis > Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 #hero {
@@ -169,7 +171,7 @@ main {
 
 /* Button */
 #about-me-button {
-    background-color: #898989;
+    background-color: #e97456;
     color: #fafafa;
     padding: 10px 15px;
     text-align: center;
@@ -182,8 +184,8 @@ main {
 
 #about-me-button:hover {
     background-color: #fafafa;
-    border: 1px solid #252525;
-    color: #252525;
+    border: 1px solid #e97456;
+    color: #e97456;
 }
 
 /* Skills section */
@@ -197,15 +199,24 @@ main {
     font-size: 200%;
 }
 
-.skills-detail {
-    background: url("../images/code-black-white.jpeg") no-repeat center center/cover;
+#skills-detail-blue,
+#skills-detail-beige,
+#skills-detail-orange {
     color: #fafafa;
-    padding: 10px 30px 10px 30px;
-    margin-bottom: 20px;
-    border-radius: 3px;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+#skills-detail-blue {
+    background-color: #505e7c;
+}
+
+#skills-detail-beige {
+    background-color: #b4a797;
+}
+
+#skills-detail-orange {
+    background-color: #e97456;
 }
 
 .skills-detail h3 {
@@ -216,13 +227,57 @@ main {
 .skills-detail-list li {
     list-style-type: none;
     font-size: 1rem;
-    padding: 2px 0;
+    margin: auto 10px;
+    padding: 3px;
 }
 
 .skills-detail-icone i {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    margin: auto 10px;
+    padding-top: 3px;
 }
 
+/* Contact page */
+#contact {
+    background: url("../images/contact-email-black-white.jpeg");
+    background-size: cover;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#contact-form {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    padding: 30px;
+    max-width: 400px;
+}
+
+#contact-form>h2 {
+    margin-bottom: 20px;
+    color: #e97456;
+}
+
+.text-input,
+.text-area {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #e97456;
+    color: #fafafa;
+}
 
 /* Footer */
 footer {
@@ -311,28 +366,26 @@ footer {
         margin-top: 40px;
     }
 
-    /* Skills section */
-    #skills {
-        max-width: 85%;
+    /* Form */
+    #contact {
+        background-position: center;
+        position: relative;
     }
 
-    #skills-set {
-        display: flex;
-        justify-content: space-between;
+    #contact-form {
+        max-width: 400px;
+        position: absolute;
+        right: 10%;
+        top: 150px;
     }
 
-    .skills-overview {
-        text-align: center;
+    .text-input:hover, .text-area:hover {
+        border-color: #e97456;
     }
-
-    .skills-detail {
-        height: 175px;
-        width: 210px;
-        padding: 10px;
-    }
-
-    .skills-detail-icone i {
-        display: none;
+    
+    .submit-button:hover {
+        background-color: #fafafa;
+        color: #e97456;
     }
 }
 
@@ -344,15 +397,5 @@ footer {
 
     #hero {
         height: 450px;
-    }
-
-    /* Skills section */
-    .skills-detail {
-        height: 175px;
-        width: 250px;
-    }
-
-    .skills-detail-icone i {
-        display:contents;
     }
 }
