@@ -34,6 +34,10 @@ h3 {
     color: #252525;
 }
 
+#fluo-text {
+    color: #e97456;
+}
+
 .hidden-heading {
     display: none;
 }
