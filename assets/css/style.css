@@ -17,25 +17,22 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-    font-family: "Abel", sans-serif;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    padding: 10px 0;
-    color: #fafafa;
-}
-
+h1,
 h2,
 h3 {
     font-family: "Abel", sans-serif;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     padding: 10px 0;
-    color: #252525;
 }
 
-.fluo-text {
-    color: #e97456;
+h1 {
+    color: #fafafa;
+}
+
+h2,
+h3 {
+    color: #252525;
 }
 
 .hidden-heading {
@@ -44,7 +41,7 @@ h3 {
 
 /* Header */
 header {
-    background-color: #898989;
+    background-color: #525152;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -56,7 +53,7 @@ header {
 
 header a {
     text-decoration: none;
-    color: inherit;
+    color: #fafafa;
 }
 
 #menu {
@@ -71,14 +68,14 @@ header a {
 }
 
 .active {
-    border-bottom: 1.5px solid #e97456;
+    border-bottom: 1.5px solid #fafafa;
     padding: 2.5px;
 }
 
 /* Navbar style with dropdeown toggle */
 nav {
     position: absolute;
-    background-color: #898989;
+    background-color: #525152;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -122,7 +119,7 @@ main {
 #cover-text {
     /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(255, 255, 255, 0.4);
-    border: 2px solid #e97456;
+    border: 2px solid #df6243;
     font-size: 100%;
     width: 50%;
     padding: 25px;
@@ -171,7 +168,7 @@ main {
 
 /* Button */
 #about-me-button {
-    background-color: #e97456;
+    background-color: #df6243;
     color: #fafafa;
     padding: 10px 15px;
     text-align: center;
@@ -184,8 +181,8 @@ main {
 
 #about-me-button:hover {
     background-color: #fafafa;
-    border: 1px solid #e97456;
-    color: #e97456;
+    border: 1px solid #df6243;
+    color: #df6243;
 }
 
 /* Skills section */
@@ -208,15 +205,15 @@ main {
 }
 
 #skills-detail-blue {
-    background-color: #505e7c;
+    background-color: #364a75;
 }
 
 #skills-detail-beige {
-    background-color: #b4a797;
+    background-color: #a1896b;
 }
 
 #skills-detail-orange {
-    background-color: #e97456;
+    background-color: #df6243;
 }
 
 .skills-detail h3 {
@@ -248,7 +245,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-grow: 1;
-    border: 2px solid #e97456;
+    border: 2px solid #df6243;
 }
 
 #portfolio h3 {
@@ -258,7 +255,7 @@ main {
 
 .work-preview {
     background-color: #b4a797;
-    border: 2px solid #e97456;
+    border: 2px solid #df6243;
     margin: 10px;
     text-align: center;
 }
@@ -276,9 +273,9 @@ main {
 }
 
 #contact-form {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     border: 2px solid #fafafa;
-    color: #505e7c;
+    color: #364a75;
     font-weight: 500;
     padding: 30px;
     max-width: 400px;
@@ -287,13 +284,13 @@ main {
 #contact-form>h2 {
     margin-bottom: 20px;
     font-weight: 600;
-    color: #e97456;
+    color: #df6243;
 }
 
 .text-input,
 .text-area {
     background: transparent;
-    color: #505e7c;
+    color: #364a75;
     width: 100%;
     margin: 5px 0 20px 0;
     border: 1px solid #fafafa;
@@ -307,13 +304,13 @@ main {
     border-radius: 2px;
     padding: 15px 32px;
     font-size: 100%;
-    background-color: #e97456;
+    background-color: #df6243;
     color: #fafafa;
 }
 
 /* Footer */
 footer {
-    background-color: #898989;
+    background-color: #525152;
 }
 
 #social-networks {
